@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DynamicApp</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   {{>navbar}}
+    <section class="hero" id="home">
+        <div class="left_div">
+            <p>WE WILL HELP YOU </p>
+           <p> <span style="color: blueviolet;">GROW YOUR BUISNESS</span></p>
+            <p>I AM FULL STACK DEVELOPER</p>
+            <button class="btn_1">READ MORE</button>
+        </div>
+        <div class="right_div">
+            <figure>
+                <img src="./images/firstimg.jpg" class="img_1">
+            </figure>
+        </div>
+    </section>
+    <div class="about_center" id="about">
+        <h1>About Us</h1>
+    <div class="about">
+        <div class="right_div">
+            <figure>
+                <img src="./images/firstimg.jpg" class="img_1">
+            </figure>
+        </div>
+        <div class="left_div">
+            <p>WE WILL HELP YOU </p>
+           <p> <span style="color: blueviolet;">GROW YOUR BUISNESS</span></p>
+            <p>I AM FULL STACK DEVELOPER</p>
+            <button class="btn_1">READ MORE</button>
+        </div>
+    </div>
+</div>
+<div class="service" id="service">
+    <div class="heading">
+        <h2>Our Service</h2>
+        <h3>Grow your buisiness with Us</h3>
+    </div>
+    <div class="card_div">
+      {{>card}}
+      {{>card}}
+      {{>card}}
+      {{>card}}
+      {{>card}}
+      {{>card}}
+      
+    </div>
+</div>
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58407.445060633356!2d86.3930500215712!3d23.8020471303469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6a30804ccfc6d%3A0xfa151e1b85f764e7!2sDhanbad%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1687692337202!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<form action="/contact" method="POST" id="contact">
+    <h1>Contact Us</h1>
+  Name: <input type="text" name="name"><br>
+  Email: <input type="text" name="email"> <br>
+  Phone: <input type="number" name="phone"> <br>
+  {{!-- Message: <textarea name="message" id="msg" cols="30" rows="10"></textarea> --}}
+  message: <input type="text" name="message">
+  <button type="submit" class="btn-primary">submit</button>
+</form>
+
+<footer>
+    <h1>Warish Khan 🏍🏍🏍</h1>
+</footer>
+</body>
+</html>
